@@ -5,7 +5,7 @@
     "display": "standalone",
     "background_color": "#FBF8F1",
     "theme_color": "#17A9B0",
-    "description": "A warm, local-first family history app — build your tree, preserve your memories, nothing ever leaves your device.",
+    "description": "A warm, local-first family history app — build your tree, preserve your memories, nothing ever leaves your device unless you choose to send it.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
