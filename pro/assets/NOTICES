@@ -2668,6 +2668,7 @@ found in the LICENSE file.
 --------------------------------------------------------------------------------
 dart_style
 glob
+http
 http_parser
 matcher
 path
