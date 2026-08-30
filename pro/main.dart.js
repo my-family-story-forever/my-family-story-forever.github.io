@@ -133048,11 +133048,12 @@ if(a.e==null){s=1
 break}s=3
 return A.k(A.d6(!0,new A.agF(o,m,a),a,t.y),$async$EZ)
 case 3:if(c===!0){$.bcj=!0
+window.close()
 window.history.back()}case 1:return A.B(q,r)}})
 return A.C($async$EZ,r)},
 F(a){return A.bfH(!1,this.c,new A.agG(this,a),t.K)}}
 A.agF.prototype={
-$1(a){var s=null,r=A.b7(20),q=A.v(this.a.a,s,s,s,s,s,s),p=A.b([],t.p)
+$1(a){var s=null,r=A.b7(20),q=A.v(this.a.a+"\n\nIf this doesn't close on its own, it's completely safe to just close this browser tab yourself \u2014 everything is already saved.",s,s,s,s,s,s),p=A.b([],t.p)
 if(!this.b)p.push(A.cT(!1,B.b53,s,s,!0,s,s,new A.agC(a,this.c),s,s))
 p.push(A.cT(!1,B.b64,s,s,!0,s,s,new A.agD(a),s,s))
 p.push(A.cG(B.b6w,new A.agE(a),s))
