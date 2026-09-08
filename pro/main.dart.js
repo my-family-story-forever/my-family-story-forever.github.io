@@ -127711,10 +127711,10 @@ o=B.hQ.ie(0.12)
 m=A.aX(12)
 l=A.p5(B.hQ.ie(0.5),B.Y,1.5)
 if(b==null)k="Your family story isn't backed up yet"
-else k=a?"You've added a lot of photos and videos \u2014 back up now":"It's been a while since your last backup"
+else k=a?"You've added a lot of photos and videos \u2014 let's save this first":"It's been a while since your last backup"
 j=A.z(a1).ok.x
 k=A.A(k,h,h,h,j==null?h:j.f_(B.hQ,B.aT),h,h)
-j=a?"That's a lot of irreplaceable material sitting only on this device. Save a backup file or turn on automatic backup before adding more \u2192":"This device is the only copy. Save a backup file or turn on automatic backup so nothing's ever at risk \u2192"
+j=a?"That's a lot of irreplaceable material sitting only on this device. You can keep adding more whenever you like \u2014 just save a backup of what's here first \u2192":"This device is the only copy. Save a backup file or turn on automatic backup so nothing's ever at risk \u2192"
 i=A.z(a1).ok.Q
 B.l.K(n,A.b([A.dA(!1,p,!0,A.d8(h,A.bW(A.b([B.a0C,B.d6,A.ct(A.b_(A.b([k,B.bp,A.A(j,h,h,h,i==null?h:i.ap(B.P),h,h)],s),B.Z,B.G,B.L),1)],s),B.Z,B.G,B.L,0,h),B.U,h,h,new A.cE(o,h,l,m,h,h,B.aH),h,h,h,B.bB,h,h,1/0),h,!0,h,h,h,h,h,h,h,h,new A.alA(a1),h,h,h,h,h,h,h),B.aD],s))}n.push(new A.OV(e.cu(),h))
 if(!e.at)A.C(A.H(g))
