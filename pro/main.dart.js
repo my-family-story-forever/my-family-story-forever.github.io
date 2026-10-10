@@ -127411,14 +127411,16 @@ s=this.r
 s.T$=r
 s.R$=0
 this.aL()},
-F(a){var s,r,q,p,o=this,n=null,m=o.d
-if(m===$?o.d=o.aqF():m)return o.a.c
-s=A.A("My Family Story, Forever",n,n,n,A.y(a).ok.f,B.bZ,n)
-r=o.w
-r=A.iP(n,B.bG,!1,n,!0,B.a4,n,A.jF(),o.r,n,n,n,n,n,2,A.kW(n,n,n,n,n,n,n,n,!0,n,n,n,n,n,o.x,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",n,n,n,n,n,n,n,n,"License key",!0,!0,!1,n,n,n,n,n,n,n,n,n,n,n,n,n,n),B.aK,!0,n,!0,!r,!1,n,B.c3,n,n,n,n,n,n,n,n,n,1,n,n,!1,"\u2022",n,n,n,new A.aKX(o),n,!1,n,n,!1,n,!0,n,B.cj,n,n,n,n,n,n,n,n,n,n,n,n,!0,B.b1,n,B.aH,n,n,n,n)
-q=o.w
-p=q?n:o.gaoC()
-return A.cW(n,A.cG(!0,A.bD(A.dL(new A.bH(B.UT,new A.aK(B.ar,A.aY(A.b([s,B.a5,B.blv,B.ay,r,B.U,A.cb(q?B.Rx:B.Sa,p,n),B.fO,B.fx,B.a9,B.bk9,B.a9,A.iP(n,B.bG,!1,n,!0,B.a4,n,A.jF(),o.e,n,n,n,n,n,2,A.kW(n,n,n,n,n,n,n,n,!0,n,n,n,n,n,o.f,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,"Access code",!0,!0,!1,n,n,n,n,n,n,n,n,n,n,n,n,n,n),B.aK,!0,n,!0,n,!1,n,B.c3,n,n,n,n,n,n,n,n,n,1,n,n,!0,"\u2022",n,n,n,new A.aKY(o),n,!1,n,n,!1,n,!0,n,B.cj,n,n,n,n,n,n,n,n,n,n,n,n,!0,B.b1,n,B.aH,n,n,n,n),B.a9,A.cb(B.ps,o.gaIO(),n)],t.p),B.bU,B.F,B.aV),n),n),n,n,B.ad),n,n),B.S,!0))}}
+F(a){var s,r,q,p,o,n=this,m=null,l=n.d
+if(l===$?n.d=n.aqF():l)return n.a.c
+s=t.p
+r=A.b([A.A("My Family Story, Forever",m,m,m,A.y(a).ok.f,B.bZ,m),B.a5],s)
+q=n.w
+q=A.iP(m,B.bG,!1,m,!0,B.a4,m,A.jF(),n.r,m,m,m,m,m,2,A.kW(m,m,m,m,m,m,m,m,!0,m,m,m,m,m,n.x,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",m,m,m,m,m,m,m,m,"License key",!0,!0,!1,m,m,m,m,m,m,m,m,m,m,m,m,m,m),B.aK,!0,m,!0,!q,!1,m,B.c3,m,m,m,m,m,m,m,m,m,1,m,m,!1,"\u2022",m,m,m,new A.aKX(n),m,!1,m,m,!1,m,!0,m,B.cj,m,m,m,m,m,m,m,m,m,m,m,m,!0,B.b1,m,B.aH,m,m,m,m)
+p=n.w
+o=p?m:n.gaoC()
+B.j.H(r,A.b([B.blv,B.ay,q,B.U,A.cb(p?B.Rx:B.Sa,o,m),B.fO,B.fx,B.a9,B.bk9,B.a9,A.iP(m,B.bG,!1,m,!0,B.a4,m,A.jF(),n.e,m,m,m,m,m,2,A.kW(m,m,m,m,m,m,m,m,!0,m,m,m,m,m,n.f,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,m,"Access code",!0,!0,!1,m,m,m,m,m,m,m,m,m,m,m,m,m,m),B.aK,!0,m,!0,m,!1,m,B.c3,m,m,m,m,m,m,m,m,m,1,m,m,!0,"\u2022",m,m,m,new A.aKY(n),m,!1,m,m,!1,m,!0,m,B.cj,m,m,m,m,m,m,m,m,m,m,m,m,!0,B.b1,m,B.aH,m,m,m,m),B.a9,A.cb(B.ps,n.gaIO(),m)],s))
+return A.cW(m,A.cG(!0,A.bD(A.dL(new A.bH(B.UT,new A.aK(B.ar,A.aY(r,B.bU,B.F,B.aV),m),m),m,m,B.ad),m,m),B.S,!0))}}
 A.aKV.prototype={
 $0(){return this.a.d=!0},
 $S:0}
