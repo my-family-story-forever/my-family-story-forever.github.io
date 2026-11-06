@@ -38808,10 +38808,11 @@ break A}if("aac"===r){s="audio/aac"
 break A}if("m4a"===r){s="audio/mp4"
 break A}s="audio/mpeg"
 break A}return s},
-buJ(a,b,c){var s=null,r="pro_license_activated",q=b.q4(c.d)
-if(q<(window.localStorage.getItem(r)==="true"?500:10))return!1
+buJ(a,b,c){var s=null,r="pro_license_activated",q=b.q4(c.d),p=window.localStorage.getItem(r)
+if(q<(p==="true"?500:10))return!1
 q=a.ao(t.J).f
-q.hz(A.hJ(s,s,s,s,s,B.a1,s,A.v("This person already has the maximum of "+(window.localStorage.getItem(r)==="true"?500:10)+" attachments (profile photo, certificates, and other files combined). Remove one before adding a recording.",s,s,s,s,s,s),s,B.dG,s,s,s,s,s,s,s,s,s,s))
+p=window.localStorage.getItem(r)
+q.hz(A.hJ(s,s,s,s,s,B.a1,s,A.v("This person already has the maximum of "+(p==="true"?500:10)+" attachments (profile photo, certificates, and other files combined). Remove one before adding a recording.",s,s,s,s,s,s),s,B.dG,s,s,s,s,s,s,s,s,s,s))
 return!0},
 VN(a,b,c,d,e,f){var s=0,r=A.q(t.H),q,p,o,n
 var $async$VN=A.m(function(g,h){if(g===1)return A.n(h,r)
@@ -130778,14 +130779,14 @@ break}l=n.gq9()
 p.B(new A.aLw(p,p.aCn(l==null?"jpg":l),m))
 case 1:return A.o(q,r)}})
 return A.p($async$B8,r)},
-x4(){var s=0,r=A.q(t.H),q,p=this,o,n,m,l,k,j
+x4(){var s=0,r=A.q(t.H),q,p=this,o,n,m,l,k,j,i
 var $async$x4=A.m(function(a,b){if(a===1)return A.n(b,r)
 for(;;)switch(s){case 0:s=3
 return A.e(A.mY(!1,B.Hn,"Choose a video",B.eA),$async$x4)
-case 3:k=b
-j=J.ah(k)
-if(j.gW(k)){s=1
-break}o=j.gbe(k)
+case 3:j=b
+i=J.ah(j)
+if(i.gW(j)){s=1
+break}o=i.gbe(j)
 n=o.aex()
 s=n==null?4:5
 break
@@ -130793,18 +130794,20 @@ case 4:s=6
 return A.e(o.l_(0),$async$x4)
 case 6:n=b
 case 5:if(p.c==null){s=1
-break}if(n>(window.localStorage.getItem("pro_license_activated")==="true"?8589934592:314572800)){j=p.c
-if(j==null){s=1
-break}j=j.ao(t.J).f
+break}i=window.localStorage.getItem("pro_license_activated")
+if(n>(i==="true"?8589934592:314572800)){i=p.c
+if(i==null){s=1
+break}i=i.ao(t.J).f
 m=A.j8(n)
-j.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("That video is "+m+" \u2014 over the "+A.j8(window.localStorage.getItem("pro_license_activated")==="true"?8589934592:314572800)+" limit. Trim it down or choose a shorter clip.",null,null,null,null,null,null),null,B.zu,null,null,null,null,null,null,null,null,null,null))
+l=window.localStorage.getItem("pro_license_activated")
+i.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("That video is "+m+" \u2014 over the "+A.j8(l==="true"?8589934592:314572800)+" limit. Trim it down or choose a shorter clip.",null,null,null,null,null,null),null,B.zu,null,null,null,null,null,null,null,null,null,null))
 s=1
 break}s=7
 return A.e(o.hN(),$async$x4)
-case 7:l=b
+case 7:k=b
 if(p.c==null){s=1
-break}j=o.gq9()
-p.B(new A.aLx(p,p.aCo(j==null?"mp4":j),l,o))
+break}i=o.gq9()
+p.B(new A.aLx(p,p.aCo(i==null?"mp4":i),k,o))
 case 1:return A.o(q,r)}})
 return A.p($async$x4,r)},
 J2(){var s=0,r=A.q(t.H),q=this,p,o,n,m
@@ -132869,25 +132872,27 @@ case 2:o=b
 if(o!=null)q.B(new A.aSv(q,o))
 return A.o(null,r)}})
 return A.p($async$Ji,r)},
-BE(){var s=0,r=A.q(t.H),q,p=this,o,n,m,l
+BE(){var s=0,r=A.q(t.H),q,p=this,o,n,m,l,k
 var $async$BE=A.m(function(a,b){if(a===1)return A.n(b,r)
 for(;;)switch(s){case 0:if(p.gHx()==null){o=p.c
 o.toString
 o=A.bq(o,!1,t.D).q4(p.a.c)
-if(o>=(window.localStorage.getItem("pro_license_activated")==="true"?500:10)){o=p.c.ao(t.J).f
-o.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(window.localStorage.getItem("pro_license_activated")==="true"?500:10)+u.N,null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
+n=window.localStorage.getItem("pro_license_activated")
+if(o>=(n==="true"?500:10)){o=p.c.ao(t.J).f
+n=window.localStorage.getItem("pro_license_activated")
+o.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(n==="true"?500:10)+u.N,null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
 s=1
 break}}s=3
 return A.e(A.mY(!1,B.ut,"Choose a results file",B.eA),$async$BE)
-case 3:n=b
-o=J.ah(n)
-if(o.gW(n)){s=1
-break}m=o.gbe(n)
+case 3:m=b
+o=J.ah(m)
+if(o.gW(m)){s=1
+break}l=o.gbe(m)
 s=4
-return A.e(m.hN(),$async$BE)
-case 4:l=b
-o=m.gq9()
-p.B(new A.aSr(p,m,A.bx_(o==null?"":o),l))
+return A.e(l.hN(),$async$BE)
+case 4:k=b
+o=l.gq9()
+p.B(new A.aSr(p,l,A.bx_(o==null?"":o),k))
 case 1:return A.o(q,r)}})
 return A.p($async$BE,r)},
 auq(){this.B(new A.aSw(this))},
@@ -133781,26 +133786,28 @@ for(;;)switch(s){case 0:h=p.c
 h.toString
 o=A.bq(h,!1,t.D)
 h=o.q4(p.a.c)
-if(h>=(window.localStorage.getItem("pro_license_activated")==="true"?500:10)){h=p.c.ao(t.J).f
-h.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(window.localStorage.getItem("pro_license_activated")==="true"?500:10)+" attachments (profile photo, certificates, and other files combined). Remove one before adding another.",null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
+n=window.localStorage.getItem("pro_license_activated")
+if(h>=(n==="true"?500:10)){h=p.c.ao(t.J).f
+n=window.localStorage.getItem("pro_license_activated")
+h.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(n==="true"?500:10)+" attachments (profile photo, certificates, and other files combined). Remove one before adding another.",null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
 s=1
 break}s=3
 return A.e(A.mY(!1,B.ut,"Choose a file to attach",B.eA),$async$x0)
-case 3:n=b
-h=J.ah(n)
-if(h.gW(n)){s=1
-break}m=h.gbe(n)
+case 3:m=b
+h=J.ah(m)
+if(h.gW(m)){s=1
+break}l=h.gbe(m)
 s=4
-return A.e(m.hN(),$async$x0)
-case 4:l=b
-h=m.gq9()
-k=A.bNV(h==null?"":h)
+return A.e(l.hN(),$async$x0)
+case 4:k=b
+h=l.gq9()
+j=A.bNV(h==null?"":h)
 p.B(new A.aTt(p))
 h=B.aZ.dN()
-j=p.a.d.d
-i=m.a
+n=p.a.d.d
+i=l.a
 s=5
-return A.e(o.Ge(A.bsy(null,"data:"+k+";base64,"+B.e6.gmy().cC(l),i,h,k,j)),$async$x0)
+return A.e(o.Ge(A.bsy(null,"data:"+j+";base64,"+B.e6.gmy().cC(k),i,h,j,n)),$async$x0)
 case 5:if(p.c==null){s=1
 break}p.B(new A.aTu(p))
 case 1:return A.o(q,r)}})
@@ -133922,24 +133929,27 @@ if(s==null)s="General \u2014 this person as a whole"
 return this.a.x=s},
 $S:0}
 A.a9r.prototype={
-F(a){var s,r,q,p,o=this,n=null,m="pro_license_activated",l=A.bq(a,!0,t.D),k=l.Ga(o.d.d),j=l.q4(o.c),i=j>=(window.localStorage.getItem(m)==="true"?500:10),h=A.w(a).ok.w
-h=A.v("Attached files",n,n,n,h==null?n:h.cD(B.af),n,n)
-s=A.w(a).ok.Q
-s=A.v("The actual scan or photo of this source \u2014 a certificate, a census page, whatever it is. Stored on this device only, same as everything else.",n,n,n,s==null?n:s.an(B.K),n,n)
-r=window.localStorage.getItem(m)==="true"?500:10
-q=""+j
-if(j>r){r=window.localStorage.getItem(m)==="true"?500:10
-r=q+" attachments for this person \u2014 over the usual limit of "+r+" (can happen after merging two records). Nothing's broken, but no more can be added until some are removed."}else{r=window.localStorage.getItem(m)==="true"?500:10
-r=q+" of "+r+" attachments used for this person (profile photo + certificates + other files combined)."}q=A.w(a).ok.Q
-if(q==null)q=n
-else{p=i?B.bJ:B.K
-q=q.eE(p,i?B.af:n)}q=A.b([h,B.bi,s,B.bi,A.v(r,n,n,n,q,n,n),B.a9],t.p)
-if(k.length!==0)B.h.G(q,new A.a3(k,new A.aVg(o),A.V(k).i("a3<1,i>")))
-h=o.e||i?n:o.f
-if(i)s="Limit reached"
-else s=k.length===0?"Attach a file":"Attach another file"
-q.push(new A.ay(1/0,n,A.dl(B.tI,A.v(s,n,n,n,n,n,n),h,n),n))
-return A.aO(q,B.W,B.C,B.H)}}
+F(a){var s,r,q,p=this,o=null,n="pro_license_activated",m=A.bq(a,!0,t.D),l=m.Ga(p.d.d),k=m.q4(p.c),j=window.localStorage.getItem(n),i=k>=(j==="true"?500:10),h=A.w(a).ok.w
+j=A.v("Attached files",o,o,o,h==null?o:h.cD(B.af),o,o)
+h=A.w(a).ok.Q
+h=A.v("The actual scan or photo of this source \u2014 a certificate, a census page, whatever it is. Stored on this device only, same as everything else.",o,o,o,h==null?o:h.an(B.K),o,o)
+s=window.localStorage.getItem(n)
+s=s==="true"?500:10
+r=""+k
+if(k>s){s=window.localStorage.getItem(n)
+s=s==="true"?500:10
+s=r+" attachments for this person \u2014 over the usual limit of "+s+" (can happen after merging two records). Nothing's broken, but no more can be added until some are removed."}else{s=window.localStorage.getItem(n)
+s=s==="true"?500:10
+s=r+" of "+s+" attachments used for this person (profile photo + certificates + other files combined)."}r=A.w(a).ok.Q
+if(r==null)r=o
+else{q=i?B.bJ:B.K
+r=r.eE(q,i?B.af:o)}r=A.b([j,B.bi,h,B.bi,A.v(s,o,o,o,r,o,o),B.a9],t.p)
+if(l.length!==0)B.h.G(r,new A.a3(l,new A.aVg(p),A.V(l).i("a3<1,i>")))
+j=p.e||i?o:p.f
+if(i)h="Limit reached"
+else h=l.length===0?"Attach a file":"Attach another file"
+r.push(new A.ay(1/0,o,A.dl(B.tI,A.v(h,o,o,o,o,o,o),j,o),o))
+return A.aO(r,B.W,B.C,B.H)}}
 A.aVg.prototype={
 $1(a){var s,r,q=null
 if(B.o.bC(a.r,"image/")){s=A.aM(6)
@@ -135432,53 +135442,62 @@ break}case 4:s=j===B.q3?6:8
 break
 case 6:h=a1.b
 g=h.byteLength
-if(g>(window.localStorage.getItem("pro_license_activated")==="true"?8589934592:314572800)){j=n.c.ao(t.J).f
+f=window.localStorage.getItem("pro_license_activated")
+if(g>(f==="true"?8589934592:314572800)){j=n.c.ao(t.J).f
 h=A.j8(h.byteLength)
-j.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This video is "+h+" \u2014 over the "+A.j8(window.localStorage.getItem("pro_license_activated")==="true"?8589934592:314572800)+" limit for a single video memory. Discard it and re-export a shorter or more compressed clip.",null,null,null,null,null,null),null,B.hl,null,null,null,null,null,null,null,null,null,null))
+g=window.localStorage.getItem("pro_license_activated")
+j.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This video is "+h+" \u2014 over the "+A.j8(g==="true"?8589934592:314572800)+" limit for a single video memory. Discard it and re-export a shorter or more compressed clip.",null,null,null,null,null,null),null,B.hl,null,null,null,null,null,null,null,null,null,null))
 s=1
 break}s=9
 return A.e(A.Hy(h,a1.c,!0),$async$oj)
 case 9:i=a3
-if(i!=null)g=i>(window.localStorage.getItem("pro_license_activated")==="true"?1800:600)
-else g=!1
+if(i!=null){g=window.localStorage.getItem("pro_license_activated")
+f=i>(g==="true"?1800:600)
+g=f}else g=!1
 if(g){j=n.c
 if(j==null){s=1
 break}j=j.ao(t.J).f
 h=B.n.aJ(i/60)
-g=window.localStorage.getItem("pro_license_activated")==="true"?1800:600
+g=window.localStorage.getItem("pro_license_activated")
+g=g==="true"?1800:600
 j.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This video is about "+h+" minutes \u2014 over the "+(g/60|0)+"-minute limit for a single video memory. Discard it and re-export a shorter clip.",null,null,null,null,null,null),null,B.hl,null,null,null,null,null,null,null,null,null,null))
 s=1
 break}g=m.wJ(a.d).length
-if(g>=(window.localStorage.getItem("pro_license_activated")==="true"?100:1)){j=n.c.ao(t.J).f
+f=window.localStorage.getItem("pro_license_activated")
+if(g>=(f==="true"?100:1)){j=n.c.ao(t.J).f
 h=a.e
-g=window.localStorage.getItem("pro_license_activated")==="true"?100:1
+g=window.localStorage.getItem("pro_license_activated")
+g=g==="true"?100:1
 j.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v(h+" already has the maximum of "+g+" video memories. Remove one first before importing a different one.",null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
 s=1
-break}s=window.localStorage.getItem("pro_license_activated")==="true"?10:11
+break}g=window.localStorage.getItem("pro_license_activated")
+s=g==="true"?10:11
 break
-case 10:f=m.Ys()+h.byteLength
-s=f>53687091200?12:13
+case 10:e=m.Ys()+h.byteLength
+s=e>53687091200?12:13
 break
 case 12:h=n.c
 h.toString
 s=14
-return A.e(A.bS(!0,new A.aXE(f),h,t.y),$async$oj)
+return A.e(A.bS(!0,new A.aXE(e),h,t.y),$async$oj)
 case 14:if(a3!==!0){s=1
 break}if(n.c==null){s=1
 break}case 13:case 11:s=7
 break
 case 8:h=m.q4(a.d)
-if(h>=(window.localStorage.getItem("pro_license_activated")==="true"?500:10)){j=n.c.ao(t.J).f
+g=window.localStorage.getItem("pro_license_activated")
+if(h>=(g==="true"?500:10)){j=n.c.ao(t.J).f
 h=a.e
-g=window.localStorage.getItem("pro_license_activated")==="true"?500:10
+g=window.localStorage.getItem("pro_license_activated")
+g=g==="true"?500:10
 j.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v(h+" already has the maximum of "+g+" attachments. Remove one of theirs before importing this capture.",null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
 s=1
 break}case 7:n.B(new A.aXF(n))
 h=a1.c
 g=a1.b
 l="data:"+h+";base64,"+B.e6.gmy().cC(g)
-e=a1.e
-k=A.dX(e.a.a)
+f=a1.e
+k=A.dX(f.a.a)
 p=16
 case 19:switch(j.a){case 0:s=21
 break
@@ -135527,8 +135546,8 @@ case 15:s=2
 break
 case 18:s=27
 return A.e(A.aj8(a1.a),$async$oj)
-case 27:e.V$=$.a7()
-e.P$=0
+case 27:f.V$=$.a7()
+f.P$=0
 if(n.c==null){s=1
 break}n.B(new A.aXI(n,a1,a))
 case 1:return A.o(q,r)
@@ -136211,19 +136230,20 @@ r.toString
 return A.bS(!0,new A.aZv(a,new A.bE(new A.bO("",B.aT,B.as),s)),r,t.N)},
 Bu(){var s=0,r=A.q(t.H),q,p=this,o,n,m,l
 var $async$Bu=A.m(function(a,b){if(a===1)return A.n(b,r)
-for(;;)switch(s){case 0:if(window.localStorage.getItem("pro_license_activated")!=="true"){q=p.xW()
+for(;;)switch(s){case 0:l=window.localStorage.getItem("pro_license_activated")
+if(l!=="true"){q=p.xW()
 s=1
 break}s=3
 return A.e(p.aG4("Name your new tree"),$async$Bu)
 case 3:o=b
 if(o==null||o.length===0){s=1
-break}n=B.aZ.dN()
-m=Date.now()
-l=A.J(A.Fp(),t.Ap)
-l.push(new A.fE(n,o,new A.aZ(m,0,!1),""))
-A.a5u(l)
+break}l=B.aZ.dN()
+n=Date.now()
+m=A.J(A.Fp(),t.Ap)
+m.push(new A.fE(l,o,new A.aZ(n,0,!1),""))
+A.a5u(m)
 s=4
-return A.e(p.D1(n,o,!0),$async$Bu)
+return A.e(p.D1(l,o,!0),$async$Bu)
 case 4:case 1:return A.o(q,r)}})
 return A.p($async$Bu,r)},
 HJ(a){return this.aum(a)},
@@ -136245,17 +136265,19 @@ case 1:return A.o(q,r)}})
 return A.p($async$HJ,r)},
 D1(a,b,c){return this.aJX(a,b,c)},
 aJW(a,b){return this.D1(a,b,!1)},
-aJX(a,b,c){var s=0,r=A.q(t.H),q,p=this,o
+aJX(a,b,c){var s=0,r=A.q(t.H),q,p=this,o,n
 var $async$D1=A.m(function(d,e){if(d===1)return A.n(e,r)
-for(;;)switch(s){case 0:o=!c
-if(o&&window.localStorage.getItem("pro_license_activated")!=="true"){q=p.xW()
+for(;;)switch(s){case 0:n=!c
+if(n){o=window.localStorage.getItem("pro_license_activated")
+o=o!=="true"}else o=!1
+if(o){q=p.xW()
 s=1
-break}s=o?3:4
+break}s=n?3:4
 break
-case 3:o=p.c
-o.toString
+case 3:n=p.c
+n.toString
 s=5
-return A.e(A.bS(!0,new A.aZC(b),o,t.y),$async$D1)
+return A.e(A.bS(!0,new A.aZC(b),n,t.y),$async$D1)
 case 5:if(e!==!0){s=1
 break}case 4:A.kG("active_tree_id",a)
 window.location.reload()
@@ -136264,18 +136286,19 @@ return A.p($async$D1,r)},
 xj(a){return this.atC(a)},
 atC(a){var s=0,r=A.q(t.H),q,p=this,o,n
 var $async$xj=A.m(function(b,c){if(b===1)return A.n(c,r)
-for(;;)switch(s){case 0:if(window.localStorage.getItem("pro_license_activated")!=="true"){q=p.xW()
+for(;;)switch(s){case 0:n=window.localStorage.getItem("pro_license_activated")
+if(n!=="true"){q=p.xW()
 s=1
-break}o=p.c
-o.toString
-n=t.y
+break}n=p.c
+n.toString
+o=t.y
 s=3
-return A.e(A.bS(!0,new A.aZl(a),o,n),$async$xj)
+return A.e(A.bS(!0,new A.aZl(a),n,o),$async$xj)
 case 3:if(c!==!0){s=1
-break}o=p.c
-if(o==null){s=1
+break}n=p.c
+if(n==null){s=1
 break}s=4
-return A.e(A.bS(!0,new A.aZm(a),o,n),$async$xj)
+return A.e(A.bS(!0,new A.aZm(a),n,o),$async$xj)
 case 4:if(c!==!0){s=1
 break}p.B(new A.aZn(p))
 s=5
@@ -136309,8 +136332,10 @@ if(k)e.push(A.cv(c,c,c,c,B.eE,c,c,c,d.d?c:new A.aZE(d,l),c,c,c,c,"Delete this tr
 e=A.bD(e,B.Y,B.C,B.aM,0,c)
 B.h.G(q,A.b([A.ev(A.eT(!1,c,c,c,!0,c,c,c,!0,f,i,c,c,c,c,!k||d.d?c:new A.aZF(d,l),!1,c,c,c,c,c,g,c,h,c,e,c),B.ca,j,c),B.a3],p))}q.push(B.U)
 p=d.d?c:d.gasS()
-o=A.he(window.localStorage.getItem(b)==="true"?B.Ao:B.AA,c,c,c)
-q.push(A.dl(o,A.v(window.localStorage.getItem(b)==="true"?"Create a new tree":"Create a new tree (Pro)",c,c,c,c,c,c),p,c))
+o=window.localStorage.getItem(b)
+n=A.he(o==="true"?B.Ao:B.AA,c,c,c)
+o=window.localStorage.getItem(b)
+q.push(A.dl(n,A.v(o==="true"?"Create a new tree":"Create a new tree (Pro)",c,c,c,c,c,c),p,c))
 return A.cN(s,A.cx(!0,A.bo(new A.bx(B.qT,new A.d7(r,A.cO(A.tF(q,r,B.aq,c,!1),r,!0,c),c),c),c,c),B.S,!0),c)}}
 A.aZz.prototype={
 $1(a){var s=null,r=A.aM(20)
@@ -136528,21 +136553,23 @@ case 2:s="video/*"
 break
 default:s=null}return s},
 pL(a,b){return this.aFh(a,b)},
-aFh(a,b){var s=0,r=A.q(t.H),q,p=this,o,n,m
+aFh(a,b){var s=0,r=A.q(t.H),q,p=this,o,n,m,l
 var $async$pL=A.m(function(c,d){if(c===1)return A.n(d,r)
 for(;;)switch(s){case 0:s=3
 return A.e(A.aj6(p.apf(a),b),$async$pL)
-case 3:m=d
-if(m==null){s=1
-break}if(a===B.q4){o=m.d
-o=o>(window.localStorage.getItem("pro_license_activated")==="true"?8589934592:314572800)}else o=!1
+case 3:l=d
+if(l==null){s=1
+break}if(a===B.q4){o=l.d
+n=window.localStorage.getItem("pro_license_activated")
+o=o>(n==="true"?8589934592:314572800)}else o=!1
 if(o){if(p.c==null){s=1
 break}p.B(new A.b04(p))
 o=p.c.ao(t.J).f
-n=A.j8(m.d)
-o.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("That video is "+n+" \u2014 over the "+A.j8(window.localStorage.getItem("pro_license_activated")==="true"?8589934592:314572800)+u.l,null,null,null,null,null,null),null,B.hl,null,null,null,null,null,null,null,null,null,null))
+n=A.j8(l.d)
+m=window.localStorage.getItem("pro_license_activated")
+o.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("That video is "+n+" \u2014 over the "+A.j8(m==="true"?8589934592:314572800)+u.l,null,null,null,null,null,null),null,B.hl,null,null,null,null,null,null,null,null,null,null))
 s=1
-break}p.B(new A.b05(p,a,m))
+break}p.B(new A.b05(p,a,l))
 case 1:return A.o(q,r)}})
 return A.p($async$pL,r)},
 av9(a,b,c){var s,r=A.cn("\\.([a-zA-Z0-9]+)$",!0,!1).kV(a)
@@ -136603,13 +136630,15 @@ s=o.c
 s.toString
 s=A.w(s).ok.z
 s=A.v("A quick photo or recording, to add to someone's profile properly next time you're at your other device. Nothing here is sent to a server \u2014 this just hands the file to your phone's own share menu, so you choose where it goes.",n,n,n,s==null?n:s.an(B.K),n,n)
-r=A.j8(window.localStorage.getItem(m)==="true"?8589934592:314572800)
-q=window.localStorage.getItem(m)==="true"?100:1
+r=window.localStorage.getItem(m)
+q=A.j8(r==="true"?8589934592:314572800)
+r=window.localStorage.getItem(m)
+r=r==="true"?100:1
 p=o.c
 p.toString
 p=A.w(p).ok.Q
 p=p==null?n:p.an(B.K)
-return A.aO(A.b([l,B.a3,s,B.bM,new A.FL(B.tF,"Photo","Take a photo","Choose from photos",new A.b_Z(o),new A.b0_(o),n),B.U,new A.FL(B.AK,"Voice recording","Record now","Choose an existing recording",new A.b00(o),new A.b01(o),n),B.U,new A.FL(B.mD,"Video","Record a video","Choose an existing video",new A.b02(o),new A.b03(o),n),B.a3,A.v("Video is capped at "+r+" \u2014 up to "+q+" per person.",n,n,n,p,n,n)],t.p),B.bo,B.C,B.H)},
+return A.aO(A.b([l,B.a3,s,B.bM,new A.FL(B.tF,"Photo","Take a photo","Choose from photos",new A.b_Z(o),new A.b0_(o),n),B.U,new A.FL(B.AK,"Voice recording","Record now","Choose an existing recording",new A.b00(o),new A.b01(o),n),B.U,new A.FL(B.mD,"Video","Record a video","Choose an existing video",new A.b02(o),new A.b03(o),n),B.a3,A.v("Video is capped at "+q+" \u2014 up to "+r+" per person.",n,n,n,p,n,n)],t.p),B.bo,B.C,B.H)},
 aFY(){var s,r,q,p,o,n,m=this,l=null,k=m.d
 k.toString
 s=m.e
@@ -137206,27 +137235,29 @@ r.V$=q
 r.P$=0
 s.at.m()
 s.aw()},
-B4(){var s=0,r=A.q(t.H),q,p=this,o,n,m,l,k
+B4(){var s=0,r=A.q(t.H),q,p=this,o,n,m,l,k,j
 var $async$B4=A.m(function(a,b){if(a===1)return A.n(b,r)
-for(;;)switch(s){case 0:k=p.c
-k.toString
-o=A.bq(k,!1,t.D)
-if(p.Q==null){k=o.q4(p.a.c.d)
-k=k>=(window.localStorage.getItem("pro_license_activated")==="true"?500:10)}else k=!1
-if(k){k=p.c.ao(t.J).f
-k.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(window.localStorage.getItem("pro_license_activated")==="true"?500:10)+u.N,null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
+for(;;)switch(s){case 0:j=p.c
+j.toString
+o=A.bq(j,!1,t.D)
+if(p.Q==null){j=o.q4(p.a.c.d)
+n=window.localStorage.getItem("pro_license_activated")
+j=j>=(n==="true"?500:10)}else j=!1
+if(j){j=p.c.ao(t.J).f
+n=window.localStorage.getItem("pro_license_activated")
+j.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(n==="true"?500:10)+u.N,null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
 s=1
 break}s=3
 return A.e(A.mY(!1,B.ut,"Choose a results file",B.eA),$async$B4)
-case 3:n=b
-k=J.ah(n)
-if(k.gW(n)){s=1
-break}m=k.gbe(n)
+case 3:m=b
+j=J.ah(m)
+if(j.gW(m)){s=1
+break}l=j.gbe(m)
 s=4
-return A.e(m.hN(),$async$B4)
-case 4:l=b
-k=m.gq9()
-p.B(new A.b26(p,m,A.bx_(k==null?"":k),l))
+return A.e(l.hN(),$async$B4)
+case 4:k=b
+j=l.gq9()
+p.B(new A.b26(p,l,A.bx_(j==null?"":j),k))
 case 1:return A.o(q,r)}})
 return A.p($async$B4,r)},
 aH9(){this.B(new A.b27(this))},
@@ -137463,7 +137494,8 @@ s.toString
 A.S(s,!1).aN(A.aJ(new A.b2F(a),null,t.z))},
 Cs(){var s=0,r=A.q(t.H),q,p=this,o
 var $async$Cs=A.m(function(a,b){if(a===1)return A.n(b,r)
-for(;;)switch(s){case 0:s=window.localStorage.getItem("pro_license_activated")!=="true"?3:4
+for(;;)switch(s){case 0:o=window.localStorage.getItem("pro_license_activated")
+s=o!=="true"?3:4
 break
 case 3:o=p.c
 o.toString
@@ -137766,12 +137798,13 @@ A.b3x.prototype={
 $0(){return this.a.J1(this.b)},
 $S:0}
 A.b3z.prototype={
-$1(a){var s,r,q,p=null,o=this.b,n=t.H,m=A.yT(B.a57,new A.b36(a,o),p,n),l=A.yT(B.a53,new A.b37(a,o),p,n)
-o=A.yT(B.a54,new A.b38(a,o),p,n)
+$1(a){var s,r,q,p,o=null,n=this.b,m=t.H,l=A.yT(B.a57,new A.b36(a,n),o,m),k=A.yT(B.a53,new A.b37(a,n),o,m)
+n=A.yT(B.a54,new A.b38(a,n),o,m)
 s=this.a
 r=this.c
-q=A.yT(B.a56,new A.b39(s,r),p,n)
-return A.b([m,l,o,q,A.yT(A.eT(!1,p,p,p,!0,p,p,p,!0,p,B.a2M,p,p,p,p,p,!1,p,p,p,p,p,p,p,B.blA,p,window.localStorage.getItem("pro_license_activated")==="true"?p:B.a32,p),s.gaDQ(),p,n),A.yT(B.a55,new A.b3a(s,r),p,n),A.yT(B.a58,new A.b3b(s,r),p,n)],t.t5)},
+q=A.yT(B.a56,new A.b39(s,r),o,m)
+p=window.localStorage.getItem("pro_license_activated")
+return A.b([l,k,n,q,A.yT(A.eT(!1,o,o,o,!0,o,o,o,!0,o,B.a2M,o,o,o,o,o,!1,o,o,o,o,o,o,o,B.blA,o,p==="true"?o:B.a32,o),s.gaDQ(),o,m),A.yT(B.a55,new A.b3a(s,r),o,m),A.yT(B.a58,new A.b3b(s,r),o,m)],t.t5)},
 $S:717}
 A.b36.prototype={
 $0(){A.S(this.a,!1).aN(A.aJ(new A.b2S(this.b),null,t.z))},
@@ -138292,32 +138325,34 @@ m(){var s=this.e
 if(s!=null)s.m()
 this.r.m()
 this.aw()},
-x7(){var s=0,r=A.q(t.H),q,p=this,o,n,m,l,k,j
+x7(){var s=0,r=A.q(t.H),q,p=this,o,n,m,l,k,j,i
 var $async$x7=A.m(function(a,b){if(a===1)return A.n(b,r)
-for(;;)switch(s){case 0:j=p.c
-j.toString
-o=A.bq(j,!1,t.D)
-j=p.a.c
-if(j.dy==null){j=o.q4(j.d)
-j=j>=(window.localStorage.getItem("pro_license_activated")==="true"?500:10)}else j=!1
-if(j){j=p.c.ao(t.J).f
-j.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(window.localStorage.getItem("pro_license_activated")==="true"?500:10)+" attachments (profile photo, certificates, and other files combined). Remove one before adding a photo.",null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
+for(;;)switch(s){case 0:i=p.c
+i.toString
+o=A.bq(i,!1,t.D)
+i=p.a.c
+if(i.dy==null){i=o.q4(i.d)
+n=window.localStorage.getItem("pro_license_activated")
+i=i>=(n==="true"?500:10)}else i=!1
+if(i){i=p.c.ao(t.J).f
+n=window.localStorage.getItem("pro_license_activated")
+i.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(n==="true"?500:10)+" attachments (profile photo, certificates, and other files combined). Remove one before adding a photo.",null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
 s=1
 break}s=3
 return A.e(A.mY(!1,null,"Choose a photo",B.tt),$async$x7)
-case 3:n=b
-j=J.ah(n)
-if(j.gW(n)){s=1
-break}m=j.gbe(n)
+case 3:m=b
+i=J.ah(m)
+if(i.gW(m)){s=1
+break}l=i.gbe(m)
 s=4
-return A.e(m.hN(),$async$x7)
-case 4:l=b
+return A.e(l.hN(),$async$x7)
+case 4:k=b
 if(p.c==null){s=1
-break}j=m.gq9()
-if(j==null)j="jpg"
-k=A.bvw(j.toLowerCase())
+break}i=l.gq9()
+if(i==null)i="jpg"
+j=A.bvw(i.toLowerCase())
 p.B(new A.b4d(p))
-p.a.c.dy="data:"+k+";base64,"+B.e6.gmy().cC(l)
+p.a.c.dy="data:"+j+";base64,"+B.e6.gmy().cC(k)
 s=5
 return A.e(o.da(p.a.c),$async$x7)
 case 5:if(p.c==null){s=1
@@ -138338,46 +138373,48 @@ case 3:if(p.c==null){s=1
 break}p.B(new A.b4k(p))
 case 1:return A.o(q,r)}})
 return A.p($async$JA,r)},
-r2(){var s=0,r=A.q(t.H),q,p=this,o,n,m,l,k,j,i,h,g
+r2(){var s=0,r=A.q(t.H),q,p=this,o,n,m,l,k,j,i,h,g,f
 var $async$r2=A.m(function(a,b){if(a===1)return A.n(b,r)
-for(;;)switch(s){case 0:g=p.c
-g.toString
-o=A.bq(g,!1,t.D)
-g=o.q4(p.a.c.d)
-if(g>=(window.localStorage.getItem("pro_license_activated")==="true"?500:10)){g=p.c.ao(t.J).f
-g.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(window.localStorage.getItem("pro_license_activated")==="true"?500:10)+" attachments (profile photo, certificates, and other files combined). Remove one before adding another photo.",null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
+for(;;)switch(s){case 0:f=p.c
+f.toString
+o=A.bq(f,!1,t.D)
+f=o.q4(p.a.c.d)
+n=window.localStorage.getItem("pro_license_activated")
+if(f>=(n==="true"?500:10)){f=p.c.ao(t.J).f
+n=window.localStorage.getItem("pro_license_activated")
+f.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(n==="true"?500:10)+" attachments (profile photo, certificates, and other files combined). Remove one before adding another photo.",null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
 s=1
 break}s=3
 return A.e(A.mY(!1,B.aQZ,"Choose a photo",B.eA),$async$r2)
-case 3:n=b
-g=J.ah(n)
-if(g.gW(n)){s=1
-break}m=g.gbe(n)
+case 3:m=b
+f=J.ah(m)
+if(f.gW(m)){s=1
+break}l=f.gbe(m)
 s=4
-return A.e(m.hN(),$async$r2)
-case 4:l=b
+return A.e(l.hN(),$async$r2)
+case 4:k=b
 if(p.c==null){s=1
-break}g=m.gq9()
-k=A.bvw(g==null?"jpg":g)
-j="data:"+k+";base64,"+B.e6.gmy().cC(l)
-i=A.bQr(j,o.wy())
-s=i!=null?5:6
+break}f=l.gq9()
+j=A.bvw(f==null?"jpg":f)
+i="data:"+j+";base64,"+B.e6.gmy().cC(k)
+h=A.bQr(i,o.wy())
+s=h!=null?5:6
 break
-case 5:g=p.c
-if(g==null){s=1
+case 5:f=p.c
+if(f==null){s=1
 break}s=7
-return A.e(A.bS(!0,new A.b3Z(i),g,t.y),$async$r2)
+return A.e(A.bS(!0,new A.b3Z(h),f,t.y),$async$r2)
 case 7:if(b!==!0){s=1
-break}case 6:g=p.c
-if(g==null){s=1
+break}case 6:f=p.c
+if(f==null){s=1
 break}s=8
-return A.e(A.bS(!0,new A.b4_(p,o),g,t.c8),$async$r2)
-case 8:h=b
-if(h==null||h.gW(h)){s=1
+return A.e(A.bS(!0,new A.b4_(p,o),f,t.c8),$async$r2)
+case 8:g=b
+if(g==null||g.gW(g)){s=1
 break}p.B(new A.b40(p))
-g=B.aZ.dN()
+f=B.aZ.dN()
 s=9
-return A.e(o.nV(A.aBb(null,null,j,m.a,g,k,h.fV(0),null)),$async$r2)
+return A.e(o.nV(A.aBb(null,null,i,l.a,f,j,g.fV(0),null)),$async$r2)
 case 9:if(p.c==null){s=1
 break}p.B(new A.b41(p))
 case 1:return A.o(q,r)}})
@@ -138484,49 +138521,56 @@ s=p}for(;;)switch(s){case 0:a2=n.c
 a2.toString
 m=A.bq(a2,!1,t.D)
 a2=m.wJ(n.a.c.d).length
-if(a2>=(window.localStorage.getItem("pro_license_activated")==="true"?100:1)){a2=n.c.ao(t.J).f
-a2.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(window.localStorage.getItem("pro_license_activated")==="true"?100:1)+" video memories. Remove one first to add a different clip.",null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
+g=window.localStorage.getItem("pro_license_activated")
+if(a2>=(g==="true"?100:1)){a2=n.c.ao(t.J).f
+g=window.localStorage.getItem("pro_license_activated")
+a2.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("This person already has the maximum of "+(g==="true"?100:1)+" video memories. Remove one first to add a different clip.",null,null,null,null,null,null),null,B.dG,null,null,null,null,null,null,null,null,null,null))
 s=1
 break}s=3
 return A.e(A.mY(!1,B.Hn,"Choose a video",B.eA),$async$o6)
-case 3:g=a5
-a2=J.ah(g)
-if(a2.gW(g)){s=1
-break}l=a2.gbe(g)
-f=l.aex()
-s=f==null?4:6
+case 3:f=a5
+a2=J.ah(f)
+if(a2.gW(f)){s=1
+break}l=a2.gbe(f)
+e=l.aex()
+s=e==null?4:6
 break
 case 4:s=7
 return A.e(J.bB4(l),$async$o6)
 case 7:s=5
 break
-case 6:a5=f
+case 6:a5=e
 case 5:k=a5
 if(n.c==null){s=1
-break}a2=window.localStorage.getItem("pro_license_activated")==="true"?8589934592:314572800
+break}a2=window.localStorage.getItem("pro_license_activated")
+a2=a2==="true"?8589934592:314572800
 if(k>a2){a2=n.c.ao(t.J).f
-e=A.j8(k)
-a2.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("That video is "+e+" \u2014 over the "+A.j8(window.localStorage.getItem("pro_license_activated")==="true"?8589934592:314572800)+u.l,null,null,null,null,null,null),null,B.hl,null,null,null,null,null,null,null,null,null,null))
+g=A.j8(k)
+d=window.localStorage.getItem("pro_license_activated")
+a2.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("That video is "+g+" \u2014 over the "+A.j8(d==="true"?8589934592:314572800)+u.l,null,null,null,null,null,null),null,B.hl,null,null,null,null,null,null,null,null,null,null))
 s=1
 break}s=8
 return A.e(l.hN(),$async$o6)
 case 8:j=a5
 if(n.c==null){s=1
 break}a2=l.gq9()
-d=A.bOQ(a2==null?"":a2)
+c=A.bOQ(a2==null?"":a2)
 s=9
-return A.e(A.Hy(j,d,!0),$async$o6)
-case 9:c=a5
-if(c!=null)a2=c>(window.localStorage.getItem("pro_license_activated")==="true"?1800:600)
-else a2=!1
+return A.e(A.Hy(j,c,!0),$async$o6)
+case 9:b=a5
+if(b!=null){a2=window.localStorage.getItem("pro_license_activated")
+g=b>(a2==="true"?1800:600)
+a2=g}else a2=!1
 if(a2){a2=n.c
 if(a2==null){s=1
 break}a2=a2.ao(t.J).f
-e=B.n.aJ(c/60)
-b=window.localStorage.getItem("pro_license_activated")==="true"?1800:600
-a2.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("That video is about "+e+" minutes \u2014 over the "+(b/60|0)+"-minute limit for a single video memory. Split it into a couple of shorter clips instead \u2014 you can add as many as you like for one person.",null,null,null,null,null,null),null,B.hl,null,null,null,null,null,null,null,null,null,null))
+g=B.n.aJ(b/60)
+d=window.localStorage.getItem("pro_license_activated")
+d=d==="true"?1800:600
+a2.hz(A.hJ(null,null,null,null,null,B.a1,null,A.v("That video is about "+g+" minutes \u2014 over the "+(d/60|0)+"-minute limit for a single video memory. Split it into a couple of shorter clips instead \u2014 you can add as many as you like for one person.",null,null,null,null,null,null),null,B.hl,null,null,null,null,null,null,null,null,null,null))
 s=1
-break}s=window.localStorage.getItem("pro_license_activated")==="true"?10:11
+break}a2=window.localStorage.getItem("pro_license_activated")
+s=a2==="true"?10:11
 break
 case 10:a=m.Ys()+k
 s=a>53687091200?12:13
@@ -138538,26 +138582,26 @@ return A.e(A.bS(!0,new A.b47(a),a2,t.y),$async$o6)
 case 14:if(a5!==!0){s=1
 break}case 13:case 11:if(n.c==null){s=1
 break}a2=l.a
-e=A.cn("\\.[^.]+$",!0,!1)
-a2=A.lE(a2,e,"")
-e=$.a7()
-a0=new A.bE(new A.bO(a2,B.aT,B.as),e)
+g=A.cn("\\.[^.]+$",!0,!1)
+a2=A.lE(a2,g,"")
+g=$.a7()
+a0=new A.bE(new A.bO(a2,B.aT,B.as),g)
 a2=n.c
 a2.toString
 s=15
 return A.e(A.bS(!0,new A.b48(a0),a2,t.N),$async$o6)
 case 15:i=a5
-a0.V$=e
+a0.V$=g
 a0.P$=0
 if(i==null||i.length===0){s=1
-break}h=d
+break}h=c
 n.B(new A.b49(n))
 p=17
 a2=B.aZ.dN()
-e=n.a.c
-b=l.a
+g=n.a.c
+d=l.a
 s=20
-return A.e(m.wO(A.bkS(null,"data:"+A.u(h)+";base64,"+B.e6.gmy().cC(j),b,a2,h,e.d,k,i)),$async$o6)
+return A.e(m.wO(A.bkS(null,"data:"+A.u(h)+";base64,"+B.e6.gmy().cC(j),d,a2,h,g.d,k,i)),$async$o6)
 case 20:p=2
 s=19
 break
@@ -138598,13 +138642,15 @@ case 3:if(p.c==null){s=1
 break}p.B(new A.b4l())
 case 1:return A.o(q,r)}})
 return A.p($async$JB,r)},
-F(a5){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null,f="pro_license_activated",e="Limit reached",d=A.bq(a5,!0,t.D),c=A.fG(h.a.c.dy),b=d.q4(h.a.c.d),a=b>=(window.localStorage.getItem(f)==="true"?500:10),a0=d.Ah(h.a.c.d),a1=d.wK(h.a.c.d),a2=d.wJ(h.a.c.d),a3=a2.length,a4=a3>=(window.localStorage.getItem(f)==="true"?100:1)
-a3=h.a.c.e
-s=A.cS(g,g,A.v("Photos for "+a3,g,g,g,g,g,g))
-r=h.r
-a3=A.v("Add a photo of "+a3+"?",g,g,g,A.w(a5).ok.r,g,g)
-q=A.w(a5).ok.z
-q=A.v("Optional \u2014 stored on this device, never sent to a server. (It's included if you back up your data yourself.)",g,g,g,q==null?g:q.an(B.K),g,g)
+F(a5){var s,r,q,p,o,n,m,l,k,j,i,h=this,g=null,f="pro_license_activated",e="Limit reached",d=A.bq(a5,!0,t.D),c=A.fG(h.a.c.dy),b=d.q4(h.a.c.d),a=window.localStorage.getItem(f),a0=b>=(a==="true"?500:10),a1=d.Ah(h.a.c.d),a2=d.wK(h.a.c.d),a3=d.wJ(h.a.c.d),a4=a3.length
+a=window.localStorage.getItem(f)
+s=a4>=(a==="true"?100:1)
+a4=h.a.c.e
+r=A.cS(g,g,A.v("Photos for "+a4,g,g,g,g,g,g))
+q=h.r
+a4=A.v("Add a photo of "+a4+"?",g,g,g,A.w(a5).ok.r,g,g)
+p=A.w(a5).ok.z
+a=A.v("Optional \u2014 stored on this device, never sent to a server. (It's included if you back up your data yourself.)",g,g,g,p==null?g:p.an(B.K),g,g)
 p=h.a.c
 o=p.z
 n=A.lH(o)
@@ -138616,73 +138662,76 @@ p=p.length!==0?p[0].toUpperCase():"?"
 o=A.v(p,g,g,g,A.fQ(g,g,A.jb(o),g,g,g,g,g,g,g,g,40,g,g,B.aL,g,g,!0,g,g,g,g,g,g,g,g),g,g)
 p=o}else p=g
 p=A.bo(A.o9(n,k,p,64),g,g)
-if(!h.d)o=m&&a
+if(!h.d)o=m&&a0
 else o=!0
 o=o?g:h.garO()
-if(m)n=a?e:"Choose a photo"
+if(m)n=a0?e:"Choose a photo"
 else n="Change photo"
 k=t.p
-o=A.b([a3,B.bi,q,B.ar,p,B.b7,new A.ay(1/0,g,A.dl(B.B0,A.v(n,g,g,g,g,g,g),o,g),g)],k)
-if(m&&a){a3=window.localStorage.getItem(f)==="true"?500:10
-q=A.w(a5).ok.Q
-q=q==null?g:q.eE(B.bJ,B.af)
-B.h.G(o,A.b([B.a3,A.v("This person already has the maximum of "+a3+" attachments (certificates and other files). Remove one before adding a photo.",g,g,g,q,g,g)],k))}if(l){a3=A.b([B.a9,new A.ay(1/0,g,A.a5_(B.eE,B.SU,h.d?g:h.gaHf(),g),g)],k)
-a3.push(B.U)
-a3.push(new A.ag5(B.tB,"Animate a photo \u2014 on myfamilystory.com \u2197","A completely separate paid website, not made by us and not part of this app. Tapping this leaves "+h.a.c.e+"'s profile and opens their site in a new tab, where you'd upload the photo yourself if you want to try it \u2014 nothing is sent there by us, and nothing here changes if you skip it.",new A.b4F(),g))
-B.h.G(o,a3)}o.push(B.bM)
+o=A.b([a4,B.bi,a,B.ar,p,B.b7,new A.ay(1/0,g,A.dl(B.B0,A.v(n,g,g,g,g,g,g),o,g),g)],k)
+if(m&&a0){a=window.localStorage.getItem(f)
+a=a==="true"?500:10
+a4=A.w(a5).ok.Q
+a4=a4==null?g:a4.eE(B.bJ,B.af)
+B.h.G(o,A.b([B.a3,A.v("This person already has the maximum of "+a+" attachments (certificates and other files). Remove one before adding a photo.",g,g,g,a4,g,g)],k))}if(l){a=A.b([B.a9,new A.ay(1/0,g,A.a5_(B.eE,B.SU,h.d?g:h.gaHf(),g),g)],k)
+a.push(B.U)
+a.push(new A.ag5(B.tB,"Animate a photo \u2014 on myfamilystory.com \u2197","A completely separate paid website, not made by us and not part of this app. Tapping this leaves "+h.a.c.e+"'s profile and opens their site in a new tab, where you'd upload the photo yourself if you want to try it \u2014 nothing is sent there by us, and nothing here changes if you skip it.",new A.b4F(),g))
+B.h.G(o,a)}o.push(B.bM)
 o.push(B.fE)
 o.push(B.ar)
-a3=A.w(a5).ok.w
-o.push(A.v("Group photos",g,g,g,a3==null?g:a3.cD(B.af),g,g))
+a=A.w(a5).ok.w
+o.push(A.v("Group photos",g,g,g,a==null?g:a.cD(B.af),g,g))
 o.push(B.bi)
-a3=h.a.c.e
-q=A.w(a5).ok.Q
-q=q==null?g:q.an(B.K)
-o.push(A.v("Photos of "+a3+" with other people \u2014 tag everyone in a photo once and it shows up on all their profiles.",g,g,g,q,g,g))
+a=h.a.c.e
+a4=A.w(a5).ok.Q
+a4=a4==null?g:a4.an(B.K)
+o.push(A.v("Photos of "+a+" with other people \u2014 tag everyone in a photo once and it shows up on all their profiles.",g,g,g,a4,g,g))
 o.push(B.a9)
-a3=a0.length
-if(a3!==0)o.push(A.bpN(B.bfO,new A.b4G(h,a0),a3,B.MM,!0))
-if(a0.length!==0)o.push(B.a9)
-a3=h.d||a?g:h.gapx()
-o.push(new A.ay(1/0,g,A.dl(B.a2x,A.v(a?e:"Add a group photo",g,g,g,g,g,g),a3,g),g))
+a=a1.length
+if(a!==0)o.push(A.bpN(B.bfO,new A.b4G(h,a1),a,B.MM,!0))
+if(a1.length!==0)o.push(B.a9)
+a=h.d||a0?g:h.gapx()
+o.push(new A.ay(1/0,g,A.dl(B.a2x,A.v(a0?e:"Add a group photo",g,g,g,g,g,g),a,g),g))
 o.push(B.bM)
 o.push(B.fE)
 o.push(B.ar)
-a3=A.w(a5).ok.w
-o.push(A.v("Voice memories",g,g,g,a3==null?g:a3.cD(B.af),g,g))
+a=A.w(a5).ok.w
+o.push(A.v("Voice memories",g,g,g,a==null?g:a.cD(B.af),g,g))
 o.push(B.bi)
-a3=h.a.c.e
-q=A.w(a5).ok.Q
-q=q==null?g:q.an(B.K)
-o.push(A.v("A recording of "+a3+"'s own voice, telling a story or just talking \u2014 record it now, or upload one made elsewhere. Playback only, no transcription yet.",g,g,g,q,g,g))
+a=h.a.c.e
+a4=A.w(a5).ok.Q
+a4=a4==null?g:a4.an(B.K)
+o.push(A.v("A recording of "+a+"'s own voice, telling a story or just talking \u2014 record it now, or upload one made elsewhere. Playback only, no transcription yet.",g,g,g,a4,g,g))
 o.push(B.a9)
-a3=a1.length
-if(a3!==0)for(j=0;j<a1.length;a1.length===a3||(0,A.l)(a1),++j){i=a1[j]
-o.push(A.ev(A.eT(!1,g,g,g,!0,g,g,g,!0,g,A.cv(g,g,g,g,A.he(h.f===i.d?B.a1m:B.AE,B.al,g,g),g,g,g,new A.b4H(h,i),g,g,g,g,g),g,g,g,g,g,!1,g,g,g,g,g,g,g,A.v(i.f,g,g,g,g,g,g),g,A.cv(g,g,g,g,B.mE,g,g,g,new A.b4I(h,i),g,g,g,g,"Remove"),g),g,g,B.dH))}if(a)o.push(B.bfH)
-else{a3=h.d
-q=A.c5(A.Co(B.a2E,B.bm3,a3?g:h.gaGZ()),1)
-o.push(A.bD(A.b([q,B.cK,A.c5(A.dl(B.a2y,B.bmW,a3?g:h.gaLF(),g),1)],k),B.Y,B.C,B.H,0,g))}o.push(B.bM)
+a=a2.length
+if(a!==0)for(j=0;j<a2.length;a2.length===a||(0,A.l)(a2),++j){i=a2[j]
+o.push(A.ev(A.eT(!1,g,g,g,!0,g,g,g,!0,g,A.cv(g,g,g,g,A.he(h.f===i.d?B.a1m:B.AE,B.al,g,g),g,g,g,new A.b4H(h,i),g,g,g,g,g),g,g,g,g,g,!1,g,g,g,g,g,g,g,A.v(i.f,g,g,g,g,g,g),g,A.cv(g,g,g,g,B.mE,g,g,g,new A.b4I(h,i),g,g,g,g,"Remove"),g),g,g,B.dH))}if(a0)o.push(B.bfH)
+else{a=h.d
+a4=A.c5(A.Co(B.a2E,B.bm3,a?g:h.gaGZ()),1)
+o.push(A.bD(A.b([a4,B.cK,A.c5(A.dl(B.a2y,B.bmW,a?g:h.gaLF(),g),1)],k),B.Y,B.C,B.H,0,g))}o.push(B.bM)
 o.push(B.fE)
 o.push(B.ar)
-a3=A.w(a5).ok.w
-o.push(A.v("Video memory",g,g,g,a3==null?g:a3.cD(B.af),g,g))
+a=A.w(a5).ok.w
+o.push(A.v("Video memory",g,g,g,a==null?g:a.cD(B.af),g,g))
 o.push(B.bi)
-a3=h.a.c.e
-q=window.localStorage.getItem(f)==="true"?100:1
-p=A.j8(window.localStorage.getItem(f)==="true"?8589934592:314572800)
-n=A.w(a5).ok.Q
-n=n==null?g:n.an(B.K)
-o.push(A.v("A short video of "+a3+" \u2014 up to "+q+" per person, each up to "+p+". Stored on this device like everything else here.",g,g,g,n,g,g))
+a=h.a.c.e
+a4=window.localStorage.getItem(f)
+a4=a4==="true"?100:1
+p=window.localStorage.getItem(f)
+n=A.j8(p==="true"?8589934592:314572800)
+m=A.w(a5).ok.Q
+p=m==null?g:m.an(B.K)
+o.push(A.v("A short video of "+a+" \u2014 up to "+a4+" per person, each up to "+n+". Stored on this device like everything else here.",g,g,g,p,g,g))
 o.push(B.a9)
-a3=a2.length
-if(a3!==0)for(j=0;j<a2.length;a2.length===a3||(0,A.l)(a2),++j){i=a2[j]
-q=A.cv(g,g,g,g,B.a2C,g,g,g,new A.b4J(h,i),g,g,g,g,"Play in a new tab")
+a=a3.length
+if(a!==0)for(j=0;j<a3.length;a3.length===a||(0,A.l)(a3),++j){i=a3[j]
+a4=A.cv(g,g,g,g,B.a2C,g,g,g,new A.b4J(h,i),g,g,g,g,"Play in a new tab")
 p=A.v(i.f,g,g,g,g,g,g)
-o.push(A.ev(A.eT(!1,g,g,g,!0,g,g,g,!0,g,q,g,g,g,g,g,!1,g,g,g,g,g,A.v(A.j8(i.z),g,g,g,g,g,g),g,p,g,A.cv(g,g,g,g,B.mE,g,g,g,new A.b4K(h,i),g,g,g,g,"Remove"),g),g,g,B.dH))}a3=h.d||a4?g:h.gapN()
-o.push(new A.ay(1/0,g,A.dl(B.AQ,A.v(a4?e:"Add a video",g,g,g,g,g,g),a3,g),g))
+o.push(A.ev(A.eT(!1,g,g,g,!0,g,g,g,!0,g,a4,g,g,g,g,g,!1,g,g,g,g,g,A.v(A.j8(i.z),g,g,g,g,g,g),g,p,g,A.cv(g,g,g,g,B.mE,g,g,g,new A.b4K(h,i),g,g,g,g,"Remove"),g),g,g,B.dH))}a=h.d||s?g:h.gapN()
+o.push(new A.ay(1/0,g,A.dl(B.AQ,A.v(s?e:"Add a video",g,g,g,g,g,g),a,g),g))
 o.push(B.bM)
 o.push(new A.ay(1/0,g,A.bP(B.SJ,new A.b4L(a5),g),g))
-return A.cN(s,A.cx(!0,new A.d7(r,A.cO(A.dm(A.bo(new A.bx(B.c4,A.aO(o,B.W,B.C,B.H),g),g,g),r,B.aq,B.a6),r,!0,g),g),B.S,!0),g)}}
+return A.cN(r,A.cx(!0,new A.d7(q,A.cO(A.dm(A.bo(new A.bx(B.c4,A.aO(o,B.W,B.C,B.H),g),g,g),q,B.aq,B.a6),q,!0,g),g),B.S,!0),g)}}
 A.b4d.prototype={
 $0(){return this.a.d=!0},
 $S:0}
@@ -138927,19 +138976,22 @@ a9(){return new A.acU(A.cU(0))}}
 A.acU.prototype={
 m(){this.d.m()
 this.aw()},
-F(a){var s,r,q,p,o,n=null,m=window.localStorage.getItem("pro_license_activated")==="true",l=A.cS(n,n,B.bnt),k=this.d,j=A.w(a).ok.f
-j=A.c5(A.v("My Family Story, Forever",n,n,n,j==null?n:j.cD(B.af),n,n),1)
-s=m?"You have Pro":"You have Basic"
-r=m?B.al:B.cm
+F(a){var s,r,q,p=null,o=window.localStorage.getItem("pro_license_activated")==="true",n=A.cS(p,p,B.bnt),m=this.d,l=A.w(a).ok.f
+l=A.c5(A.v("My Family Story, Forever",p,p,p,l==null?p:l.cD(B.af),p,p),1)
+s=o?"You have Pro":"You have Basic"
+r=o?B.al:B.cm
 q=t.p
-r=A.bD(A.b([j,B.pv,new A.a7y(s,r,n)],q),B.Y,B.C,B.H,0,n)
+r=A.bD(A.b([l,B.pv,new A.a7y(s,r,p)],q),B.Y,B.C,B.H,0,p)
 s=A.w(a).ok.z
-j=A.v("One-time purchase, not a subscription. Two tiers, as two separate downloads \u2014 always fully local, and nothing on your family is ever sent online unless you choose to send something off yourself, for professional printing or a third-party photo animation service.",n,n,n,s==null?n:s.an(B.K),n,n)
-s=A.xG(new A.b5I())
-p=A.w(a).ok.Q
-p=A.v('Printing is never required to use either tier \u2014 anyone can export and print their own PDF for free. "Send to print" is a paid add-on available on both Basic and Pro, not a Pro-exclusive perk.',n,n,n,p==null?n:p.an(B.K),n,n)
-o=A.w(a).ok.Q
-return A.cN(l,A.cx(!0,new A.d7(k,A.cO(A.dm(A.bo(new A.bx(B.VA,A.aO(A.b([r,B.a3,j,B.fW,s,B.b7,new A.SG(m,new A.b5J(this),n),B.ar,p,B.a3,A.v("Everything lives on your own device, so how much you can actually store also depends on your device's free disk space, not just which tier you're on.",n,n,n,o==null?n:o.an(B.K),n,n)],q),B.bo,B.C,B.H),n),n,n),k,B.aq,B.a6),k,!0,n),n),B.S,!0),n)}}
+l=A.b([r,B.a3,A.v("One-time purchase, not a subscription. Two tiers, as two separate downloads \u2014 always fully local, and nothing on your family is ever sent online unless you choose to send something off yourself, for professional printing or a third-party photo animation service.",p,p,p,s==null?p:s.an(B.K),p,p),B.fW,A.xG(new A.b5I()),B.b7],q)
+l.push(new A.SG(o,new A.b5J(this),p))
+l.push(B.ar)
+s=A.w(a).ok.Q
+l.push(A.v('Printing is never required to use either tier \u2014 anyone can export and print their own PDF for free. "Send to print" is a paid add-on available on both Basic and Pro, not a Pro-exclusive perk.',p,p,p,s==null?p:s.an(B.K),p,p))
+l.push(B.a3)
+s=A.w(a).ok.Q
+l.push(A.v("Everything lives on your own device, so how much you can actually store also depends on your device's free disk space, not just which tier you're on.",p,p,p,s==null?p:s.an(B.K),p,p))
+return A.cN(n,A.cx(!0,new A.d7(m,A.cO(A.dm(A.bo(new A.bx(B.VA,A.aO(l,B.bo,B.C,B.H),p),p,p),m,B.aq,B.a6),m,!0,p),p),B.S,!0),p)}}
 A.b5I.prototype={
 $2(a,b){if(b.b>=700)return B.a4K
 return B.Ze},
@@ -142021,7 +142073,8 @@ case 45:m=p.wJ(b4),l=m.length,i=0
 case 47:if(!(i<m.length)){s=49
 break}b1=m[i]
 k=p.wJ(b3).length
-s=k<(window.localStorage.getItem("pro_license_activated")==="true"?100:1)?50:52
+j=window.localStorage.getItem("pro_license_activated")
+s=k<(j==="true"?100:1)?50:52
 break
 case 50:b1.e=b3
 s=53
