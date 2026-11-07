@@ -137769,7 +137769,9 @@ r=r==null?k:r.an(B.K)
 return A.bn(A.v("No related people found \u2014 everyone else in the tree is on a separate, unconnected branch from "+s+".",k,k,k,r,B.bN,k),k,k)}r=this.e
 return new A.d7(r,A.cO(A.Lv(r,new A.aZF(j),s,k,B.a6,new A.aZG()),r,!0,k),k)}}
 A.aZE.prototype={
-$2(a,b){return B.o.aR(a.a.gaq(),b.a.gaq())},
+$2(a,b){var s=a.a,r=b.a,q=B.o.aR(s.x.toLowerCase(),r.x.toLowerCase())
+if(q!==0)return q
+return B.o.aR(s.e.toLowerCase(),r.e.toLowerCase())},
 $S:714}
 A.aZG.prototype={
 $2(a,b){return B.du},
